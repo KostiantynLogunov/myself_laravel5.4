@@ -1,0 +1,18 @@
+home
+home
+<h1 class="display-3">Hello I'm Kostiantyn Logunov.</h1>
+<p class="lead">I'm a freelance front-end & back-end web developer who loves PHP and JavaScript</p>
+<p>I see startup. I go in your future...</p>
+___________________________________________________________________________________
+
+About
+About
+
+I.jpg
+<h3 class="pb-3" style="color: #026AA5;">Details</h3>
+<h5>Name:</h5>
+Kotiantyn Logunov
+<h5>Age:</h5>
+30 years
+<h5>Location:</h5>
+Vinnitsia, Ukraine, Earth <br><br>

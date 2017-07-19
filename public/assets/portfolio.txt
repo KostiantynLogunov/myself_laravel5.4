@@ -1,0 +1,23 @@
+SUPER
+portfolio_pic1.jpg
+STARTUP
+_____________________________________________________
+Shop
+portfolio_pic2.jpg
+WEB
+_____________________________________________________
+Bank's poduct
+portfolio_pic3.jpg
+WEB
+_____________________________________________________
+SUPER API
+portfolio_pic4.jpg
+WEB
+_____________________________________________________
+Social
+portfolio_pic5.jpg
+Mobile
+_____________________________________________________
+nOName
+portfolio_pic6.jpg
+nOName
