@@ -1,0 +1,54 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Page;
+use Validator;
+use Illuminate\Http\Request;
+
+class PagesAddController extends Controller
+{
+    //
+    public function execute(Request $request) {
+
+
+        if ($request->isMethod('post')) {
+            $input = $request->except('_token');
+
+            $validator = Validator::make($input,[
+                            'name' => 'required|max:50|unique:pages,name',
+                            'alias' => 'required|unique:pages|max:50',
+                            'text' => 'required'
+            ]);
+
+            if ($validator->fails()) {
+                return redirect()->route('pagesAdd')->withErrors($validator)->withInput();
+            }
+
+            if ($request->hasFile('images')) {
+                $file = $request->file('images');
+
+                $input['images'] = $file->getClientOriginalName();
+                $file->move(public_path().'/assets/img',$input['images']);
+            }
+
+            $page = new Page($input);
+            $page->fill($input);
+
+            if ($page->save()) {
+                return redirect('admin')->with('status','Page is added !');
+            }
+
+
+
+        }
+
+        if (view()->exists('admin.pages_add')) {
+            $data = [
+                    'title'=> 'New Page'
+                    ];
+            return view('admin.pages_add',$data);
+        }
+        abort(404);
+    }
+}

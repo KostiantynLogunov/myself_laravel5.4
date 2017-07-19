@@ -1,0 +1,96 @@
+body {
+    background-attachment: fixed;
+    height:100%;width:100%;
+    background-image:url(../icons/background2.png);
+    /*background: rgba(255,1,200,0.1);*/
+    /*background-repeat:no-repeat;*/
+    background-size:cover;
+}
+.back-shapes{
+    background: #113243; /* Old browsers */
+    background-image:url(../icons/background2.png);
+    /*background-repeat:no-repeat;*/
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+    /*background-attachment: fixed;*/
+    /*position:fixed;*/
+    left:0;
+    top:0;
+    z-index:1;
+}
+
+/* Shapes & Animation
+*/
+
+.epic-icon {
+    font-size:210%!important;
+    opacity:0.5;
+    display:inline-block;
+    width:35px;
+    height:35px;
+    text-align:center;
+    transition:0.3s all;
+}
+
+/*.back-shapes {
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}*/
+
+/*.back-shapes img {
+    opacity:0.2;
+    position:absolute;
+    width:2%;
+}*/
+
+.back-shapes em {
+    opacity:0.2;
+    position:absolute;
+    width:2%;
+    font-size:240%!important;
+    color:#fff;
+}
+
+@media screen and (max-width: 1400px) {
+    /*.back-shapes img {
+        width:3%;
+    }*/
+    .back-shapes em {
+        font-size:260%!important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /*.back-shapes img {
+        width:4%;
+    }*/
+    .back-shapes em {
+        font-size:230%!important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   /* .back-shapes img {
+        width:5%;
+    }*/
+    .back-shapes em {
+        font-size:180%!important;
+    }
+}
+
+.floating{animation-name:floating;-webkit-animation-name:floating;animation-duration:5s;-webkit-animation-duration:5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}
+@keyframes floating{0%{transform:translateY(0%) rotate(-55deg);}
+50%{transform:translateY(300%) rotate(55deg);}
+100%{transform:translateY(0%) rotate(-55deg);}
+}
+@-webkit-keyframes floating{0%{-webkit-transform:translateY(0%);}
+50%{-webkit-transform:translateY(300%);}
+100%{-webkit-transform:translateY(0%);}
+}
+@-webkit-keyframes floating{0%{-webkit-transform:translateY(0%);}
+50%{-webkit-transform:translateY(300%);}
+100%{-webkit-transform:translateY(0%);}
+}
